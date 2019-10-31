@@ -28,6 +28,14 @@ NativeSdkManager::~NativeSdkManager(){
             handler = NULL;
         }
     }
+    if(extendConfig){
+        delete extendConfig;
+        extendConfig = NULL;
+    }
+    if(devTools){
+        delete devTools;
+        devTools = NULL;
+    }
     if(m_pNativeSdkManager){
         delete m_pNativeSdkManager;
         m_pNativeSdkManager = NULL;

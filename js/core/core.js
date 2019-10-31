@@ -3,6 +3,7 @@
  */
 
 function Syber (parent) {
+  this.moduleVersion = '1.0';
   this.version = '1.0.0';
   this.isInited = false;
   this.pluginList = {};
@@ -19,7 +20,7 @@ function Syber (parent) {
   }
   this.option = {
     defaultPlugins: ['alert', 'confirm', 'prompt', 'gtoast', 'toast', 'capture', 'system', 'filepicker', 'chooseImage', 'previewImage']
-  }
+  };
 
   // add 内置 plugins
   this._addBuiltInPlugins();

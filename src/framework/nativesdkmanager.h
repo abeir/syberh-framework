@@ -17,7 +17,6 @@
 class NativeSdkManager :public  QObject{
     Q_OBJECT
 private:
-    NativeSdkManager();
     static NativeSdkManager *m_pNativeSdkManager;
     NativeSdkFactory m_NativeSdkFactory;
     //拓展配置
@@ -30,6 +29,7 @@ private:
      */
     void initHandlerConnect(QString typeID);
 public:
+    NativeSdkManager();
     ~NativeSdkManager();
     static NativeSdkManager * getInstance();
 
